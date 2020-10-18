@@ -1,0 +1,287 @@
+.coast {
+    z-index: 4;
+    position: absolute;
+    height:26px;
+    width: 1920px;
+    top: 305px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+
+}
+
+
+.swim {
+    position: absolute;
+    z-index: 3;
+    width:270px;
+    height:160px;
+    top: 150px;
+    left: 450px;
+    overflow: hidden;
+
+}
+
+
+.swimmingfusion {
+    width: 205px;
+    height: 132px ;
+    position: absolute;
+    z-index: 3;
+    top:235px;
+    left:300px;
+    animation: swim 1 ease-in-out 4s both;
+    animation-delay:1s
+    
+}
+
+
+
+@keyframes swim {
+    0% {left:280px;}
+    100% {left:825px; }
+}
+
+
+.swimming1 {
+    position: absolute;
+    z-index: 3;
+
+}
+.swimming2 {
+    position: absolute;
+    z-index: 3;
+    animation: swimleg 2 ease-in-out 2.5s both;
+
+}
+@keyframes swimleg {
+     0% {transform:rotate(0);}
+     50% {transform:rotate(-30deg) ;}
+     100% {transform:rotate(0) ;}
+}
+.swimming3 {
+    position: absolute;
+    z-index: 3;
+    animation: swimarm 2 ease-in-out 2.5s both;
+
+}
+@keyframes swimarm {
+    0% {transform:rotate(0); }
+    50% {transform:rotate(-50deg); }
+    100% {transform:rotate(0);}
+}    
+.swimming4 {
+    position: absolute;
+    z-index: 3;
+    animation: swimarm2 2 ease-in-out 2.5s both;
+
+}
+@keyframes swimarm2 {
+    0% {transform:rotate(30deg);}
+    50% {transform:rotate(5deg);}
+    100% {transform:rotate(30deg);}
+}    
+
+.shark  {
+    position: absolute;
+    z-index: 4;
+    bottom:-100px;
+    overflow: hidden;
+    left:685px;
+    width:528px;
+    height: 671px;
+    
+    animation: shark 1 ease-in-out 4s both;
+    animation-delay: 4s;
+}
+
+ @keyframes shark {
+    0% {bottom:-450px;}
+    20% {bottom:-400px;}
+    25% {bottom:-400px;}
+    40% {bottom:-450px;}
+    60% {bottom:-350px;}
+    65% {bottom:-450px;}
+    90% {bottom: 0px;}
+    100% {bottom: -100px;}
+
+}
+
+.sharkbody {
+    position: absolute;
+    z-index: 4;
+    bottom: 0px;
+    overflow: hidden;
+    
+}
+
+.sharkteeth1 {
+    position: absolute;
+    z-index: 3;
+    top:-10px;
+    overflow: hidden;
+    animation: teeeeeth 2;
+    animation-duration: 1s;
+    animation-delay: 6.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes teeeeeth {
+    0% {top:-10px;}
+    50% {top:30px;}
+    100% {top:-10px;}
+}
+
+.sharkteeth2 {
+    position: absolute;
+    z-index: 3;
+    top:-10px;
+    overflow: hidden;
+    animation: teeeeth 2;
+    animation-duration: 1s;
+    animation-delay: 6.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes teeeeth {
+    0% {top:-10px;}
+    50% {top:-50px;}
+    100% {top:-10px;}
+
+}
+.poster  {
+    position: absolute;
+    top : 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+}
+.actor {
+    position: absolute;
+    top: 25px;
+    left:670px;
+    z-index: 6;
+    text-align: center;
+    display:flex;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 16px;
+    animation: opacity both;
+    animation-delay: 11s;
+    animation-duration: 0.2s;
+
+    
+}
+
+@keyframes opacity  {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+.director {
+    position: absolute;
+    top: 70px;
+    left: 830px;
+    z-index: 6;
+    text-align: center;
+    display:flex;
+    font-family: helvetica;
+    
+    font-size: 16px;
+    animation: opacity both;
+    animation-delay: 11s;
+    animation-duration: 0.2s;
+    
+}
+
+.title {
+    position: absolute;
+    top: 95px;
+    left: 740px;
+    z-index: 6;
+    text-align: center;
+    display:flex;
+    
+    width:425px;
+    height: 166px;
+    
+    
+
+    
+    animation: opacity both;
+    animation-delay: 7.9s;
+    animation-duration: 0.3s;
+
+}
+
+.title h1 {
+    font-size: 155px;
+    font-family: Amity Jack;
+    letter-spacing: -10px;
+    word-spacing: -30px;;
+    color: rgba(255,255,255,.1);
+    background-image: url("../blood5.jpg"); background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    width:600px;
+    padding-left:18px;
+    animation: animate 2.5s linear both;
+    animation-delay: 8.7s;
+
+}
+
+@keyframes animate {
+
+    0%{background-position: left 0px top 80px;}
+    40%{background-position: left 400px top -10px;}
+    60%{background-position: left 600px top -60px;}
+    100%{background-position: left 800px top -110px;}
+    
+}
+
+
+
+.background {
+   z-index: 1;
+   top : 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: absolute;
+   height: 1033px;
+   overflow: hidden;
+}
+
+
+.original {
+   opacity: 20%;
+   z-index: 2;
+   position: absolute;
+   overflow: hidden;
+}
+
+.zoom {
+  transform: scale(1.9);
+  overflow: hidden;
+  position: absolute;
+  top : 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: zoom 1 1.7s both;
+  animation-delay: 6.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zoom {
+    0% {transform: scale(1.9);}
+    100% {transform: scale(1);}
+}
+
+
+

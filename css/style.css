@@ -1,0 +1,109 @@
+.poster {
+     position: absolute;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+     
+     
+}
+.zoom  {
+       position: absolute;
+       left:0%;
+       right: 0%;
+       bottom: 0%;
+       top: 0%;
+       animation: zoom 1 2s both;
+       animation-timing-function: ease-in;
+       8animation-timing-function: 1;
+       8animation-duration: 3s;
+
+
+}
+.zoom2  {
+       position: absolute;
+       left:0%;
+       right: 0%;
+       bottom: 0%;
+       top: 0%;
+       transform: scale(2);
+       
+}
+/* .zoom2:hover {
+    transform: scale(1);
+}*/
+.zoom3  {
+    position: absolute;
+    left:0%;
+    right: 0%;
+    bottom: 0%;
+    top: 0%;
+    
+}
+
+
+
+
+}
+@keyframes zoom {
+    0% {transform: scale(2);}
+    100% {transform: scale(width:100vw; height:100vh);}
+
+
+}
+
+
+
+/* html  <div class="box"></div>
+
+
+css
+
+.box{
+    width:100px;
+    height:100px;
+    background-color: red;
+
+
+    transition: all 0.5s ease-in-out
+}
+
+js
+
+$(document).ready(function () {
+
+    var windowWidth = $(window).width()
+    var mouseX = 0;
+
+    $(document).mousemove(function (e) {
+        mouseX = e.pageX;
+        if (mouseX < windowWidth / 2) {
+            $(".box").css("background-color", "red");
+        }
+        if (mouseX > windowWidth / 2) {
+            $(".box").css("background-color", "blue");
+        }
+    })
+
+})
+
+/*.bird-img {
+    position: absolute;
+    width: 800px;
+}
+
+
+
+
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="466.47px" height="584.1px" viewBox="0 0 466.47 584.1" style="overflow:visible;enable-background:new 0 0 466.47 584.1;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#366B86;}
+</style>
+<defs>
+</defs>
+<g>
+	<path class="st0" d="M466.47,584.1h-57.6L232.83,64.9L57.6,584.1H0L202.81,0h60.84L466.47,584.1z"/>
+</g>
+</svg>
